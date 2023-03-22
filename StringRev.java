@@ -12,19 +12,18 @@ public class StringRev {
         System.out.println("String1 Reverse [method1]: " + str1);
 
         // string method 2
-        System.out.println("Enter String2: ");
-        String str2 = scanner.nextLine().strip();
-        String[] strArr2 = str2.split("");
-        int len = strArr2.length - 1;
-        for (int i = 0; i <= len / 2; i++) {
-            // using 3rd var to swap
-            String temp = strArr2[i];
-            strArr2[i] = strArr2[len - i];
-            strArr2[len - i] = temp;
+        System.out.println("Enter string: ");
+        String str3 = scanner.nextLine();
+        char [] charArr = str3.toCharArray();
+        int charArrLen = charArr.length - 1;
+
+        for (int i = 0; i <= charArrLen / 2; i++) {
+            char temp = charArr[i];
+            charArr[i] = charArr[charArrLen - i];
+            charArr[charArrLen - i] = temp;
         }
-        // task 1 convert string array to actual string
-        for(String s: strArr2) {
-            System.out.print(s + "");
-        }
+        String revStr3 = charArr.toString();
+        System.out.println(revStr3);
+
     }
 }
