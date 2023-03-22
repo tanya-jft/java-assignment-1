@@ -22,7 +22,7 @@ public class StringRev {
             charArr[i] = charArr[charArrLen - i];
             charArr[charArrLen - i] = temp;
         }
-        String revStr3 = charArr.toString();
+        String revStr3 = new String(charArr);
         System.out.println(revStr3);
 
     }
