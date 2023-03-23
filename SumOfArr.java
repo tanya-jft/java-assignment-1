@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class SumOfArr {
@@ -15,6 +16,7 @@ public class SumOfArr {
             arr[i] = (int) (Math.random() * 20) + 1; // generate the random value to the array
             sum += arr[i]; // sum of the array
         }
+
         for (int x : arr) {
             System.out.print(x + " "); // print the elements
         }
